@@ -28,6 +28,7 @@ class CloudKitController {
                 completion(false)
             }
             print(#function)
+            completion(true)
         }
     }
     

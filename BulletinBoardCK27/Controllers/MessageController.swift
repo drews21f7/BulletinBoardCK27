@@ -12,8 +12,15 @@ class MessageController {
     //Singleton
     static let shared = MessageController()
     
+    let messagesWereUpdatedNotification = Notification.Name("messagesWereUpdated")
+    
     //Source of truth
-    var messages: [Message] = []
+    var messages: [Message] = [] {
+        didSet {
+            // Post a notification
+            NotificationCenter.default.post(name: messagesWereUpdatedNotification, object: nil)
+        }
+    }
     
     // MARK: - CRUD
     //Create
@@ -55,4 +62,5 @@ class MessageController {
     //Update
     
     //Delete
+    func delete
 }

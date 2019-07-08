@@ -8,20 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		3AD89C4A22D39DE000624AE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD89C4922D39DE000624AE9 /* AppDelegate.swift */; };
-		3AD89C4C22D39DE000624AE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD89C4B22D39DE000624AE9 /* ViewController.swift */; };
 		3AD89C4F22D39DE000624AE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD89C4D22D39DE000624AE9 /* Main.storyboard */; };
 		3AD89C5122D39DE100624AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AD89C5022D39DE100624AE9 /* Assets.xcassets */; };
 		3AD89C5422D39DE100624AE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD89C5222D39DE100624AE9 /* LaunchScreen.storyboard */; };
+		3AD89C6322D39F0800624AE9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD89C6222D39F0800624AE9 /* CloudKit.framework */; };
+		3AD89C6522D39FBD00624AE9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD89C6422D39FBD00624AE9 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3AD89C4622D39DE000624AE9 /* BulletinBoardCK27.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BulletinBoardCK27.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AD89C4922D39DE000624AE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3AD89C4B22D39DE000624AE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3AD89C4E22D39DE000624AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AD89C5022D39DE100624AE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AD89C5322D39DE100624AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AD89C5522D39DE100624AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD89C6022D39F0500624AE9 /* BulletinBoardCK27.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BulletinBoardCK27.entitlements; sourceTree = "<group>"; };
+		3AD89C6222D39F0800624AE9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		3AD89C6422D39FBD00624AE9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AD89C6322D39F0800624AE9 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +44,7 @@
 			children = (
 				3AD89C4822D39DE000624AE9 /* BulletinBoardCK27 */,
 				3AD89C4722D39DE000624AE9 /* Products */,
+				3AD89C6122D39F0800624AE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +59,63 @@
 		3AD89C4822D39DE000624AE9 /* BulletinBoardCK27 */ = {
 			isa = PBXGroup;
 			children = (
+				3AD89C6022D39F0500624AE9 /* BulletinBoardCK27.entitlements */,
+				3AD89C5F22D39E9D00624AE9 /* View Controllers */,
+				3AD89C5E22D39E9500624AE9 /* Model Controllers */,
+				3AD89C5D22D39E9000624AE9 /* Models */,
+				3AD89C5C22D39E7300624AE9 /* Storyboards */,
+				3AD89C5B22D39E6700624AE9 /* Resources */,
+			);
+			path = BulletinBoardCK27;
+			sourceTree = "<group>";
+		};
+		3AD89C5B22D39E6700624AE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				3AD89C4922D39DE000624AE9 /* AppDelegate.swift */,
-				3AD89C4B22D39DE000624AE9 /* ViewController.swift */,
-				3AD89C4D22D39DE000624AE9 /* Main.storyboard */,
 				3AD89C5022D39DE100624AE9 /* Assets.xcassets */,
 				3AD89C5222D39DE100624AE9 /* LaunchScreen.storyboard */,
 				3AD89C5522D39DE100624AE9 /* Info.plist */,
 			);
-			path = BulletinBoardCK27;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3AD89C5C22D39E7300624AE9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3AD89C4D22D39DE000624AE9 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3AD89C5D22D39E9000624AE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AD89C6422D39FBD00624AE9 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3AD89C5E22D39E9500624AE9 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		3AD89C5F22D39E9D00624AE9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3AD89C6122D39F0800624AE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AD89C6222D39F0800624AE9 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +150,14 @@
 				TargetAttributes = {
 					3AD89C4522D39DE000624AE9 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AD89C4C22D39DE000624AE9 /* ViewController.swift in Sources */,
 				3AD89C4A22D39DE000624AE9 /* AppDelegate.swift in Sources */,
+				3AD89C6522D39FBD00624AE9 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +344,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BulletinBoardCK27/BulletinBoardCK27.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49NKW8MQX9;
-				INFOPLIST_FILE = BulletinBoardCK27/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BulletinBoardCK27/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,9 +363,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BulletinBoardCK27/BulletinBoardCK27.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49NKW8MQX9;
-				INFOPLIST_FILE = BulletinBoardCK27/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BulletinBoardCK27/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

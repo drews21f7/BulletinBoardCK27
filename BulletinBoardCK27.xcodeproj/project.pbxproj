@@ -15,6 +15,8 @@
 		3AD89C6522D39FBD00624AE9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD89C6422D39FBD00624AE9 /* Message.swift */; };
 		3AD89C6722D3A65E00624AE9 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD89C6622D3A65E00624AE9 /* MessageController.swift */; };
 		3AD89C6922D3A7D000624AE9 /* CloudKitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD89C6822D3A7D000624AE9 /* CloudKitController.swift */; };
+		3AD89C6D22D3B1AF00624AE9 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD89C6C22D3B1AF00624AE9 /* MessageViewController.swift */; };
+		3AD89C6F22D3B40F00624AE9 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD89C6E22D3B40F00624AE9 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		3AD89C6422D39FBD00624AE9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3AD89C6622D3A65E00624AE9 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		3AD89C6822D3A7D000624AE9 /* CloudKitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitController.swift; sourceTree = "<group>"; };
+		3AD89C6C22D3B1AF00624AE9 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		3AD89C6E22D3B40F00624AE9 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,6 @@
 		3AD89C5E22D39E9500624AE9 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3AD89C6622D3A65E00624AE9 /* MessageController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -110,6 +113,7 @@
 		3AD89C5F22D39E9D00624AE9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3AD89C6C22D3B1AF00624AE9 /* MessageViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -125,9 +129,10 @@
 		3AD89C6A22D3A7D300624AE9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3AD89C6622D3A65E00624AE9 /* MessageController.swift */,
+				3AD89C5F22D39E9D00624AE9 /* View Controllers */,
 				3AD89C6B22D3A7EB00624AE9 /* Helpers+Extensions */,
 				3AD89C5E22D39E9500624AE9 /* Model Controllers */,
-				3AD89C5F22D39E9D00624AE9 /* View Controllers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				3AD89C6822D3A7D000624AE9 /* CloudKitController.swift */,
+				3AD89C6E22D3B40F00624AE9 /* DateExtension.swift */,
 			);
 			path = "Helpers+Extensions";
 			sourceTree = "<group>";
@@ -220,9 +226,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AD89C4A22D39DE000624AE9 /* AppDelegate.swift in Sources */,
+				3AD89C6F22D3B40F00624AE9 /* DateExtension.swift in Sources */,
 				3AD89C6722D3A65E00624AE9 /* MessageController.swift in Sources */,
 				3AD89C6922D3A7D000624AE9 /* CloudKitController.swift in Sources */,
 				3AD89C6522D39FBD00624AE9 /* Message.swift in Sources */,
+				3AD89C6D22D3B1AF00624AE9 /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
